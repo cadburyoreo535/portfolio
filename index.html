@@ -14,18 +14,20 @@
       <div class="gradient-orb orb-1"></div>
       <div class="gradient-orb orb-2"></div>
       <div class="gradient-orb orb-3"></div>
+      <div class="particles-container" id="particles-container"></div>
    </div>
 
    <!-- Navigation -->
    <nav class="navbar">
       <div class="nav-container">
          <div class="logo">
-            <span>Portfolio</span>
+            <img src="./pics/logowhite.png" alt="Portfolio Logo" class="logo-image">
          </div>
          <ul class="nav-menu">
             <li><a href="#home" class="nav-link">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
          </ul>
       </div>
    </nav>
@@ -38,13 +40,13 @@
                <h1 class="hero-title">
                   Hi, I'm <span class="highlight">Christian Paulo Pillado</span>
                </h1>
-               <p class="hero-subtitle">3rd Year BS in Computer Science</p>
+               <p class="hero-subtitle">BS in Computer Science</p>
             </div>
          </div>
          <div class="hero-visual">
             <div class="glass-card profile-card">
                <div class="profile-image">
-                  <img src="https://via.placeholder.com/300x300" alt="Profile Picture">
+                  <img src="D:\CODE\portfolio\pics\pfp1.jfif" alt="Profile Picture">
                </div>
                <div class="profile-stats">
                   <div class="stat">
@@ -68,42 +70,70 @@
    <!-- About Section -->
    <section id="about" class="about">
       <div class="container">
-         <h2 class="section-title">About Me</h2>
+         <h2 class="section-title slide-up">About Me</h2>
          <div class="about-content">
             <div class="about-text">
-               <div class="glass-card">
+               <div class="glass-card zoom-in">
                   <h3>Passionate Developer</h3>
-                  <p>
-                     I'm passionate about creating backend solutions that bring ideas to life.
-                  </p>
+                     <p>
+                        Currently in my 3rd year of Computer Science studies, I'm passionate about continuous learning and building innovative solutions using modern technologies like Django, Python, and JavaScript.
+                     </p>
                   <div class="skills-grid">
-                     <div class="skill-item">
+                     <div class="skill-item stagger-item delay-1" data-skill="85">
                         <i class="fab fa-html5"></i>
                         <span>HTML</span>
+                        <div class="skill-progress">
+                           <div class="skill-bar" data-percentage="85"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
                      </div>
-                     <div class="skill-item">
+                     <div class="skill-item stagger-item delay-2" data-skill="80">
                         <i class="fab fa-css3-alt"></i>
                         <span>CSS</span>
+                        <div class="skill-progress">
+                           <div class="skill-bar" data-percentage="80"></div>
+                        </div>
+                        <span class="skill-percentage">75%</span>
                      </div>
-                     <div class="skill-item">
+                     <div class="skill-item stagger-item delay-3" data-skill="75">
                         <i class="fab fa-js-square"></i>
                         <span>JavaScript</span>
-                     </div>
-                     <div class="skill-item">
+                        <div class="skill-progress">
+                           <div class="skill-bar" data-percentage="75"></div>
+                        </div>
+                        <span class="skill-percentage">75%</span>
+     </div>
+                     <div class="skill-item stagger-item delay-4" data-skill="90">
                         <i class="fab fa-python"></i>
                         <span>Python</span>
+                        <div class="skill-progress">
+                           <div class="skill-bar" data-percentage="90"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
                      </div>
-                     <div class="skill-item">
+                     <div class="skill-item stagger-item delay-5" data-skill="70">
                         <i class="fas fa-gamepad"></i>
                         <span>Pygame</span>
+                        <div class="skill-progress">
+                           <div class="skill-bar" data-percentage="70"></div>
+                        </div>
+                        <span class="skill-percentage">70%</span>
                      </div>
-                     <div class="skill-item">
+                     <div class="skill-item stagger-item delay-6" data-skill="85">
                         <i class="fab fa-python"></i>
                         <span>Django</span>
+                        <div class="skill-progress">
+                           <div class="skill-bar" data-percentage="85"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
                      </div>
-                     <div class="skill-item">
+                     <div class="skill-item stagger-item delay-7" data-skill="65">
                         <i class="fas fa-database"></i>
                         <span>PostgreSQL</span>
+                        <div class="skill-progress">
+                           <div class="skill-bar" data-percentage="65"></div>
+                        </div>
+                        <span class="skill-percentage">65%</span>
                      </div>
                   </div>
                </div>
@@ -115,19 +145,18 @@
    <!-- Projects Section -->
    <section id="projects" class="projects">
       <div class="container">
-         <h2 class="section-title">Projects</h2>
+         <h2 class="section-title slide-up">Projects</h2>
          <div class="projects-grid">
-            <div class="project-card glass-card">
+            <div class="project-card glass-card slide-left">
                <div class="project-image">
                   <img src="D:\CODE\portfolio\pics\ARCAI.png" alt="Project 1">
                   <div class="project-overlay">
-                     <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                     <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                     <a href="https://github.com/DukeZyke/Arc.Ai" class="project-github"><i class="fab fa-github"></i></a>
                   </div>
                </div>
                <div class="project-content">
                   <h3>Arc.ai</h3>
-                  <p>A Hierarchy-Based File Repository System</p>
+                  <p> Arc.ai is Hierarchy-Based File Repository System</p>
                   <div class="project-tech">
                      <span>Django</span>
                      <span>JavaScript</span>
@@ -137,19 +166,47 @@
             </div>
 
 
-            <div class="project-card glass-card">
+            <div class="project-card glass-card slide-right">
                <div class="project-image">
                   <img src="D:\CODE\portfolio\pics\RESizedLogoTitle.png" alt="Project 3">
                   <div class="project-overlay">
-                     <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                      <a href="#" class="project-github"><i class="fab fa-github"></i></a>
                   </div>
                </div>
                <div class="project-content">
-                  <h3>Farmaggedon</h3>
-                  <p>No description</p>
+                  <h3>Farmageddon</h3>
+                  <p>A final project created for CCS 246 Introduction to Artificial Intelligence</p>
                   <div class="project-tech">
                      <span>Pygame</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Contact Section -->
+   <section id="contact" class="contact">
+      <div class="container">
+         <h2 class="section-title slide-up">Get In Touch</h2>
+         <div class="contact-content">
+            <div class="contact-info">
+               <div class="glass-card zoom-in">
+                  <h3>Let's Connect</h3>
+                  <p>Feel free to reach out for collaborations, opportunities, or just to say hello!</p>
+                  <div class="social-links">
+                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cpillado535@gmail.com" target="_blank" class="social-link gmail">
+                        <i class="fas fa-envelope"></i>
+                        <span>Gmail</span>
+                     </a>
+                     <a href="https://github.com/cadburyoreo535" target="_blank" class="social-link github">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                     </a>
+                     <a href="https://www.facebook.com/christian.paulooo" target="_blank" class="social-link facebook">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                     </a>
                   </div>
                </div>
             </div>
