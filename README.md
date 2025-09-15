@@ -56,6 +56,7 @@ portfolio/
 │   ├── pfp1.jpg        # Profile picture
 │   ├── ARCAI.png       # Arc.ai project image
 │   └── RESizedLogoTitle.png # Farmageddon project image
+│   └── workhorizon.png # Work Horizon project image
 └── README.md          # Project documentation
 ```
 
