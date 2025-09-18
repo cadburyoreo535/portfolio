@@ -930,3 +930,132 @@ body {
 .scroll-to-top:active {
     transform: translateY(-2px) scale(1.05) !important;
 }
+
+
+
+/* GitHub Section */
+.github {
+    padding: rem 0;
+    position: relative;
+}
+
+.github-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* GitHub Statistics */
+.github-stats-wrapper .glass-card {
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.github-simple {
+    margin: 0;
+}
+
+.github-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 0;
+}
+
+.github-stats-grid img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+}
+
+.github-stats-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.2);
+}
+
+/* GitHub Contributions */
+.github-contributions-wrapper .glass-card {
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.github-contributions-wrapper h3 {
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.github-graph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contributions-graph {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contributions-graph:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.2);
+}
+
+/* Light Theme GitHub Section */
+[data-theme="light"] .github-contributions-wrapper h3 {
+    color: var(--text-primary);
+}
+
+[data-theme="light"] .github-stats-grid img,
+[data-theme="light"] .contributions-graph {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .github-stats-grid img:hover,
+[data-theme="light"] .contributions-graph:hover {
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .github {
+        padding: 3rem 0;
+    }
+    
+    .github-content {
+        gap: 2rem;
+    }
+    
+    .github-stats-wrapper .glass-card,
+    .github-contributions-wrapper .glass-card {
+        padding: 1.5rem;
+    }
+    
+    .github-stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .github-stats-grid img,
+    .contributions-graph {
+        max-width: 100%;
+    }
+}
+
+/* Remove old github-contributions styles since it's now a separate section */
+.github-contributions {
+    display: none; /* Hide the old section if it still exists */
+}
+
