@@ -44,21 +44,6 @@ This portfolio project was created to:
 
 Visit the live website: [Portfolio Website](https://pau-portfolio.vercel.app/)
 
-## 📁 Project Structure
-
-```
-portfolio/
-├── index.html          # Main HTML file
-├── styles.css          # All styling and animations
-├── script.js           # JavaScript functionality
-├── pics/              # Image assets
-│   ├── logowhite.png   # Navigation logo
-│   ├── pfp1.jpg        # Profile picture
-│   ├── ARCAI.png       # Arc.ai project image
-│   └── RESizedLogoTitle.png # Farmageddon project image
-│   └── workhorizon.png # Work Horizon project image
-└── README.md          # Project documentation
-```
 
 ## 🛠️ Technologies Used
 
